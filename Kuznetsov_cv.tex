@@ -1,0 +1,95 @@
+%% Copyright 2006-2012 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[12pt,a4paper]{moderncv} 
+\usepackage[T2A]{fontenc} 
+\usepackage[utf8]{inputenc} 
+% possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\usepackage[unicode]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+% moderncv themes
+\moderncvstyle{classic}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\rmdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% adjust the page margins
+\usepackage[scale=0.87]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}      % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+
+% personal data
+\firstname{\HUGE Kuznetsov}
+\familyname{Kirill}
+% \title{Веб-разработчик / Python-программист}               % optional, remove the line if not wanted
+\address{Saint-Petersburg, Russia}    % optional, remove the line if not wanted
+\mobile{+7~(931)~592~3423}                     % optional, remove the line if not wanted
+%\phone{+2~(345)~678~901}                      % optional, remove the line if not wanted
+%\fax{+3~(456)~789~012}                        % optional, remove the line if not wanted
+\email{kirill.kz20010@gmail.com}                          % optional, remove the line if not wanted
+\homepage{github.com/bicikar}                    % optional, remove the line if not wanted
+%\extrainfo{additional information}            % optional, remove the line if not wanted
+%\photo[110pt][0.01pt]{picture.jpg}                  % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle
+
+\section{Education}
+\cventry{2019--2023}{Saint-Petersburg State University}{Mathematics and Computer Sciences department}{Mathematics, Algorithms and Data Analysis}{Bachelor’s degree}{}{}
+\cventry{2021--2024}{Computer Science Center}{Data Science}{}{}{}{}
+\cventry{Attended courses}{}{}{}{}{}{}
+\vspace{-11mm}
+\cvlistitem{Data bases, Autumn 2021, CSC}
+\cvlistitem{Data analysis, Autumn 2021, CSC}
+\cvlistitem{Python, Autumn 2021, SPBU}
+\cvlistitem{Basics of Bayesian inference, Autumn 2021, SPBU}
+\cvlistitem{C++, Autumn 2020 - Spring 2021, SPBU}
+\cvlistitem{Machine Learing, Autumn 2021 - Spring 2022, SPBU}
+
+\section{Projects}
+\cventry{Autumn 2021}{RRT algorithm project}{educational practice}{SPBU MCS}{\newline{}\url{https://https://github.com/bicikar/rrt_python}}{}
+\cvlistitem {
+Realization of RRT* algoithm for path planning
+}
+\cvlistitem{Visualization of path planning}
+
+\cventry{Autumn 2020}{MathDetector}{educational practice}{SPBU MCS}{\newline{}\url{ https://github.com/ArChanDDD/MathDetector}}{}
+\cvlistitem {
+Сonvert a pdf or hand-drawn image into Tex-code
+}
+\cvlistitem{Сreation of datasets and image analysis}
+
+\section{Knowledge and skills}
+\cventry{Programming}{Python}{\newline C/C++}{}{}{}{}
+\cventry{Languages}{Russian - Native}{\newline English -- Intermediate}{}{}{}
+
+\section{Publications}
+\cventry{Sept. 2018--\\Apr. 2019}{Subquandles of free quandles}{educational practice}{LCME (ЛНМО)}{\newline{}\url{https://arxiv.org/abs/1904.06571}}{}
+\cvlistitem {Proof of that a subquandle of a free quandle is free}
+
+
+
+
+\end{document}
+
